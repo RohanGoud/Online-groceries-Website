@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Online Store - Cart</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Online Store</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="cart"><a href="#">Cart (0)</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="cart">
+      <div class="container">
+        <h2>Your Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Product 1</td>
+              <td>$10</td>
+              <td>2</td>
+              <td>$20</td>
+            </tr>
+            <tr>
+              <td>Product 2</td>
+              <td>$20</td>
+              <td>1</td>
+              <td>$20</td>
+            </tr>
+            <tr>
+              <td colspan="3">Subtotal</td>
+              <td>$40</td>
+            </tr>
+            <tr>
+              <td colspan="3">Shipping</td>
+              <td>$5</td>
+            </tr>
+            <tr>
+              <td colspan="3">Tax</td>
+              <td>$3.50</td>
+            </tr>
+            <tr>
+              <td colspan="3">Total</td>
+              <td>$48.50</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="checkout">Checkout</button>
+      </div>
+    </section>
+    <section class="cart">
+      <div class="container">
+        <h2>Cart</h2>
+        <ul id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </ul>
+        <button id="clear-cart">Clear Cart</button>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container">
+        <p>&copy; 2020 My Online Store. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
